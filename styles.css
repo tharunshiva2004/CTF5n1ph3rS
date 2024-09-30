@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/images/Marvel-Studios-The-First-10-Years-Banner-818660087.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+    width:100%;
+    height:100%;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+.root{
+    --first-half: #flagfirsthalf;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.comic-grid {
+    display: grid;
+    grid-template-columns: repeat(minmax(100px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.comic-card {
+    background-color:rgba(112, 107, 107, 0.8);
+    border-radius: 30px;
+    padding: 30px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.comic-card:hover {
+    transform: scale(1.05);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: black;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
